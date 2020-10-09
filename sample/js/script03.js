@@ -1,6 +1,6 @@
 $(function(){
   //
-  let test_array = [30,20,"テキストだって入れられる","他にも入る可能性があるが今日のところはテキスト","200"];
+  let test_array = [30,20,"テキストだって入れられる"," 大吉　","200"];
   
   
   $("#button01").on("click",function(){
@@ -12,11 +12,11 @@ $(function(){
   })
 
   $("#button03").on("click",function(){
-    $("#content").text(Math.random());
+    $("#content").text(Math.random())*10;
   })
 
   $("#button04").on("click",function(){
-    let random_num = Math.random() * 10;
+    let random_num = Math.random() * 100;
     $("#content").text(Math.floor(random_num));
   })
 
